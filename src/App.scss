@@ -179,20 +179,21 @@ button.close-icon {
   padding: 0;
   position: absolute;
   top: -12px;
-  right: -15px;
+  left: -15px;
   width: 35px;
   height: 35px;
   display: none;
-  background: #dadada;
+  background: #ddd;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
 }
 
 button.close-icon:hover {
-  background: #cccccc;
+  background: #ccc;
 }
 
 button.close-icon img {
-  width: 14px;
+  width: 13px;
+  position: relative;
 }
 
 .book {
@@ -205,6 +206,12 @@ button.close-icon img {
   margin-bottom: 20px;
   flex-basis: 30%;
   box-shadow: 0 7px 7px rgba(0, 0, 0, 0.2);
+
+  &:hover {
+    .FlipPage__bg {
+      border-color: transparent transparent darken($color-red, 5%) transparent;
+    }
+  }
 }
 
 .large-book {
@@ -234,24 +241,16 @@ button.close-icon img {
   overflow: hidden;
   padding: 5px;
   position: absolute;
+  z-index: 100;
   bottom: 0;
   width: 100%;
   box-sizing: border-box;
   max-height: 26px;
-  transition: max-height 0.3s ease-out;
+  transition: max-height 0.2s ease-out;
 }
 
 .small-book-info h5 {
   margin: 2px 0 0;
-}
-
-.small-book-info .page-flip button {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: .65rem;
-  padding: .5rem 1rem;
-  margin: 7px 0 3px;
-  box-shadow: none;
 }
 
 ul.tags {
@@ -273,24 +272,60 @@ ul.tags li {
 .small-book:not(.selected-book):hover, .small-book:not(.selected-book):focus {
   transform: scale(1.15);
   box-shadow: 0 14px 14px rgba(0,0,0,.3);
-}
-
-.small-book:hover {
   z-index: 100;
 }
 
 .small-book:hover .small-book-info, .selected-book .small-book-info {  
   bottom: 0;
-  transition: max-height 0.3s ease-in;
+  transition: max-height 0.2s ease-in;
   max-height: 300px;
 }
 
-.small-book:hover .page-flip button {
-  background: #AD0015;
+.small-book.selected-book .FlipPage, .selected-book .close-icon {
+  display: inline-block;
 }
 
-.selected-book .page-flip, .selected-book .close-icon {
+
+.FlipPage__bg {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-style: solid;
+  border-color: transparent transparent $color-red transparent;
+}
+
+.FlipPage__text {
+  position: absolute;
   display: inline-block;
+  letter-spacing: 2px;
+  font-weight: 600;
+  color: white;
+}
+
+.large-book {
+  .FlipPage__bg {
+    border-width: 0 0 200px 200px;
+  }
+  .FlipPage__text {
+    bottom: 35px;
+    right: 25px;
+    font-size: 30px;
+  }
+}
+
+.small-book {
+  .FlipPage {
+    display: none;
+  }
+  .FlipPage__bg {
+    border-width: 0 0 130px 130px;
+  }
+  .FlipPage__text {
+    bottom: 63px;
+    right: 8px;
+    font-size: .85rem;
+    letter-spacing: 1px;
+  }
 }
 
 @media (max-width: 700px) {

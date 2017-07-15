@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Tag } from './Tag';
+import { FlipPage } from './FlipPage';
 
 export class SmallBook extends Component {
   render(){
@@ -15,6 +16,7 @@ export class SmallBook extends Component {
            		<ul className="tags">{tags}</ul>
               <div className = "page-flip"><button>flip page</button></div>
            </div>
+           <FlipPage />
            <button className="close-icon noselect" onClick={this.props.onCloseClick}>
               <img src="img/close-icon.svg" />
            </button>
