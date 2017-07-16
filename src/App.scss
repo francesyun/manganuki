@@ -63,6 +63,36 @@ a {
 .white {
 	color: white;
 }
+
+.StarRating {
+  unicode-bidi: bidi-override;
+  color: #c5c5c5;
+  font-size: 25px;
+  height: 25px;
+  width: 100px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  text-shadow: 0px 1px 0 #a2a2a2;
+  
+  &--top {
+    color: #e7711b;
+    padding: 0;
+    position: absolute;
+    z-index: 1;
+    display: block;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+  &--bottom {
+    padding: 0;
+    display: block;
+    z-index: 0;
+  }
+}
+
+
 .footer {
 	margin: 80px auto 0;
 	width: 60%;
@@ -202,6 +232,7 @@ button.close-icon img {
   cursor: pointer;
   position: relative;
   background-size: cover;
+  background-color: #ddd;
   box-sizing: border-box;
   margin-bottom: 20px;
   flex-basis: 30%;
@@ -238,7 +269,7 @@ button.close-icon img {
 .SmallBook__info {
   background: white;
   overflow: hidden;
-  padding: 5px;
+  padding: 5px 0;
   position: absolute;
   z-index: 100;
   bottom: 0;
