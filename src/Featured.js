@@ -15,7 +15,7 @@ export class Featured extends Component {
           <h2 id="manga-title">{clickedBook.name}</h2>
           <ul className="tags">{tags}</ul>
           <div className="manga-about">
-            <StarRating rating={clickedBook.mangahere_rating} />
+            <StarRating starRating={clickedBook.mangahere_rating} />
             <p><span className="red">My take: </span>{clickedBook.reviews[0].text}</p>
             <p><span className="red">Description: </span>{clickedBook.description}</p>
           </div>
