@@ -214,7 +214,7 @@ button.close-icon img {
   }
 }
 
-.large-book {
+.LargeBook {
   width: 500px;
   height: 750px;
   margin: 5px auto 20px;
@@ -228,15 +228,14 @@ button.close-icon img {
   }
 }
 
-.page-flip {
-  display: none;
+.SmallBook__container {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
 }
 
-.small-book {
-  max-width: 200px;
-}
-
-.small-book-info {
+.SmallBook__info {
   background: white;
   overflow: hidden;
   padding: 5px;
@@ -249,8 +248,24 @@ button.close-icon img {
   transition: max-height 0.2s ease-out;
 }
 
-.small-book-info h5 {
+.SmallBook__info h5 {
   margin: 2px 0 0;
+}
+
+.SmallBook:not(.selected-book):hover, .SmallBook:not(.selected-book):focus {
+  transform: scale(1.15);
+  box-shadow: 0 14px 14px rgba(0,0,0,.3);
+  z-index: 100;
+}
+
+.SmallBook:hover .SmallBook__info, .selected-book .SmallBook__info {  
+  bottom: 0;
+  transition: max-height 0.2s ease-in;
+  max-height: 47px;
+}
+
+.SmallBook.selected-book .FlipPage, .selected-book .close-icon {
+  display: inline-block;
 }
 
 ul.tags {
@@ -262,27 +277,6 @@ ul.tags li {
   display: inline-block;
   font-size: 11px;
   margin: 2px 5px;
-}
-
-.small-book {
-  transition: all .1s;
-  cursor: pointer;
-}
-
-.small-book:not(.selected-book):hover, .small-book:not(.selected-book):focus {
-  transform: scale(1.15);
-  box-shadow: 0 14px 14px rgba(0,0,0,.3);
-  z-index: 100;
-}
-
-.small-book:hover .small-book-info, .selected-book .small-book-info {  
-  bottom: 0;
-  transition: max-height 0.2s ease-in;
-  max-height: 300px;
-}
-
-.small-book.selected-book .FlipPage, .selected-book .close-icon {
-  display: inline-block;
 }
 
 
@@ -302,7 +296,7 @@ ul.tags li {
   color: white;
 }
 
-.large-book {
+.LargeBook {
   .FlipPage__bg {
     border-width: 0 0 200px 200px;
   }
@@ -313,7 +307,11 @@ ul.tags li {
   }
 }
 
-.small-book {
+.SmallBook {
+  transition: all .1s;
+  cursor: pointer;
+  max-width: 200px;
+
   .FlipPage {
     display: none;
   }
@@ -347,24 +345,30 @@ ul.tags li {
   .footer {
   	margin-top: 20px;
   }
+  .SmallBook {
+    height: 140px;
+    &.selected-book .FlipPage {
+      display: none;
+    }
+  }
 }
 
 @media (max-width : 414px) { 
-	.large-book {
+	.LargeBook {
 		width: 400px;
 		height: 600px;
 	}
 }
 
 @media (max-width : 375px) { 
-	.large-book {
+	.LargeBook {
 		width: 350px;
 		height: 525px;
 	}
 }
 
 @media (max-width: 320px) { 
-	.large-book {
+	.LargeBook {
 		width: 300px;
 		height: 450px;
 	}
