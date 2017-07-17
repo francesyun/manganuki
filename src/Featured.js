@@ -32,9 +32,9 @@ export class Featured extends Component {
           <h2 id="manga-title">{clickedBook.name}</h2>
           <ul className="tags">{tags}</ul>
           <div className="manga-about">
-            <StarRating starRating={clickedBook.mangahere_rating} numRatings={clickedBook.mangahere_numRatings} />
+            <StarRating starRating={clickedBook.mangahere_rating} numRatings={clickedBook.mangahere_numRatings} link={clickedBook.link} />
             <p><span className="red">Description: </span>{clickedBook.description}</p>
-            <p><img src="./img/manganuki-avatar.svg" alt="avatar" style={{marginRight: 5}} /><span className="red">Manganuki says: </span>{clickedBook.reviews[0].text} Rating: {tanukiRating}</p>
+            <p><img src="./img/manganuki-avatar.svg" alt="avatar" style={{marginRight: 5, width: 25}} /><span className="red">Manganuki says: </span>{clickedBook.reviews[0].text} Rating: {tanukiRating}</p>
           </div>
           <a href={clickedBook.link} target="_blank">
             <button style={{marginTop: 15}}>read full manga</button>

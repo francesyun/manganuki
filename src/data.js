@@ -80,7 +80,7 @@ export let bookList = [
     mangahere_numRatings: 16475,
     reviews: [{
       rating: 4,
-      text: "It'll make you laugh with a couple tears. Some really epic scenes as the main character works on becoming an actress."
+      text: "It'll make you laugh and your heart thump. Some really epic scenes as the main character strives to become an actress."
     }]
   },
   {

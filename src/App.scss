@@ -67,39 +67,14 @@ a {
 .StarRating {
   margin-top: .5rem;
 }
-.StarRating__stars {
+.StarRating__star {
   unicode-bidi: bidi-override;
-  color: #c5c5c5;
-  font-size: 25px;
-  height: 25px;
-  margin: 0 auto;
-  position: relative;
-  padding: 0;
-  display: inline-block;
-  vertical-align: middle;
-  
-  &--top {
-    color: $color-red;
-    padding: 0;
-    position: absolute;
-    z-index: 1;
-    display: block;
-    top: 0;
-    left: 0;
-    overflow: hidden;
-  }
-  &--bottom {
-    padding: 0;
-    display: block;
-    z-index: 0;
-  }
+  font-size: 18px;
+  margin-right: 5px;
+  color: $color-red;
 }
 
 .StarRating__text {
-  display: inline-block;
-  margin-left: .5rem;
-  vertical-align: middle;
-  margin-top: .4rem;
   &--rating {
     color: $color-red;
     font-weight: 600;
@@ -107,7 +82,10 @@ a {
   &--numRatings {
     margin-left: .5rem;
     font-size: 12px;
-    color: #999;
+    color: #666;
+    a {
+      color: #666;
+    }
   }
 }
 
