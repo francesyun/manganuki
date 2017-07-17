@@ -9,15 +9,32 @@ export class Featured extends Component {
     let { clickedBook, onBookClick, onCloseClick, pageIndex } = this.props;
     if (clickedBook){
       let tags = clickedBook.tags.map((tag)=><Tag tagName={tag} />);
+      let tanukiRating = "hmm..";
+      if (clickedBook.reviews[0]) {
+        switch(clickedBook.reviews[0].rating) {
+          case 5:
+            tanukiRating = "5 - my personal favorite"
+            break;
+          case 4:
+            tanukiRating = "4 - very good"
+            break;
+          case 3:
+            tanukiRating = "3 - you'll probably like it"
+            break;
+          case 2:
+            tanukiRating = "2 - kinda bad"
+            break;
+        }
+      }
       featured = (
         <div>
           <LargeBook book={clickedBook} onBookClick={onBookClick}  onCloseClick={onCloseClick} pageIndex={pageIndex} />
           <h2 id="manga-title">{clickedBook.name}</h2>
           <ul className="tags">{tags}</ul>
           <div className="manga-about">
-            <StarRating starRating={clickedBook.mangahere_rating} />
-            <p><span className="red">My take: </span>{clickedBook.reviews[0].text}</p>
+            <StarRating starRating={clickedBook.mangahere_rating} numRatings={clickedBook.mangahere_numRatings} />
             <p><span className="red">Description: </span>{clickedBook.description}</p>
+            <p><img src="./img/manganuki-avatar.svg" alt="avatar" style={{marginRight: 5}} /><span className="red">Manganuki says: </span>{clickedBook.reviews[0].text} Rating: {tanukiRating}</p>
           </div>
           <a href={clickedBook.link} target="_blank">
             <button style={{marginTop: 15}}>read full manga</button>

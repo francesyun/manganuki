@@ -37,7 +37,7 @@ export let bookList = [
     mangahere_rating: 4.93,
     mangahere_numRatings: 2457,
     reviews: [{
-      rating: 5,
+      rating: 4,
       text: "The creators of Death Note return in this very different but excellent manga. They've managed to make manga creation feel action-packed. Unique characters, unique story."
     }]
   },
@@ -65,7 +65,7 @@ export let bookList = [
     mangahere_rating: 4.91,
     mangahere_numRatings: 980,
     reviews: [{
-      rating: 4,
+      rating: 3,
       text: "A manga that teaches you game theory! Annoying characters, but very interesting mental trickeries."
     }]
   },
@@ -79,7 +79,7 @@ export let bookList = [
     mangahere_rating: 4.91,
     mangahere_numRatings: 16475,
     reviews: [{
-      rating: 5,
+      rating: 4,
       text: "It'll make you laugh with a couple tears. Some really epic scenes as the main character works on becoming an actress."
     }]
   },
@@ -93,7 +93,7 @@ export let bookList = [
     mangahere_rating: 4.8,
     mangahere_numRatings: 103,
     reviews: [{
-      rating: 5,
+      rating: 4,
       text: "Abandoned children trying to escape from brutal adults, who are hiding a secret... A page turner."
     }]
   },
@@ -137,7 +137,7 @@ export let bookList = [
     mangahere_rating: 4.82,
     mangahere_numRatings: 1240,
     reviews: [{
-      rating: 5,
+      rating: 4,
       text: "Don't get tricked -- This is not a girly manga! It's a psychological suspense game that students are forced to play."
     }]
   },
@@ -151,7 +151,7 @@ export let bookList = [
     mangahere_rating: 4.85,
     mangahere_numRatings: 801,
     reviews: [{
-      rating: 5,
+      rating: 4,
       text: "Telekinetic girls that can chop off your limbs instantly. It'll make you sad and disturbed, but you'll probably get addicted anyway."
     }]
   },
@@ -209,8 +209,8 @@ export let bookList = [
     mangahere_rating: 4.87,
     mangahere_numRatings: 440,
     reviews: [{
-      rating: 4,
-      text: "Classic. Based on the board game Go, teaches you the dedication of mastering your craft. It'll also break your heart."
+      rating: 3,
+      text: "Classic. Based on the board game Go, teaches you the dedication of mastering your craft. Might also break your heart."
     }]
   },
   {
@@ -237,7 +237,7 @@ export let bookList = [
     mangahere_rating: 4.4,
     mangahere_numRatings: 244,
     reviews: [{
-      rating: 4,
+      rating: 3,
       text: "A guy gets into an accident, and the doctor accidentally plastic-surgeries him to look like his crush (a girl). Now that's a great premise."
     }]
   },

@@ -7,15 +7,20 @@ export class StarRating extends Component {
 	let starWidth = (this.props.starRating / 5)*100 + "%";
 
     return (
-      <div className="StarRating">
-		<div className="StarRating--top" style={{width: starWidth}}>
+    <div className="StarRating">
+      <div className="StarRating__stars">
+		<div className="StarRating__stars--top" style={{width: starWidth}}>
 			{stars}
 		</div>
-		<div className="StarRating--bottom">
+		<div className="StarRating__stars--bottom">
 			{stars}
 		</div>
 	  </div>
-
+	  <div className="StarRating__text">
+		<span className="StarRating__text--rating">{this.props.starRating}</span>
+		<span className="StarRating__text--numRatings">({this.props.numRatings})</span>
+	  </div>
+    </div>
     );
   }
 }
