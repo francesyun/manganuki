@@ -289,7 +289,7 @@ button.close-icon img {
 .SmallBook:hover .SmallBook__info, .selected-book .SmallBook__info {  
   bottom: 0;
   transition: max-height 0.2s ease-in;
-  max-height: 47px;
+  max-height: 45px;
 }
 
 .SmallBook.selected-book .FlipPage, .selected-book .close-icon {

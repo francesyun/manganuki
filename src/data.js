@@ -341,5 +341,35 @@ export let bookList = [
       rating: 4,
       text: "A guy falls in love with a girl upon seeing her strawberry panties. Yeah, this manga is full of cliches, but it has great characters nonetheless."
     }]
+  },
+  {
+    id: 24,
+    name: 'Kaguya Wants to be Confessed to',
+    alternative_name: ["The Geniuses' War of Love and Brains"],
+    description: "Kaguya Shinomiya and Miyuki Shirogane are the members of the incredibly prestigious Shuichi'in Academy's student council, asserting their positions as geniuses among geniuses. All the time they spend together has caused the two of them to develop feelings for each other, but their pride will not allow them to be the one to confess and become the submissive one in the relationship! Love is war, and their battle to make the other confess begins now!",
+    tags: ["seinen","comedy","drama","psychological", "romance", "school life"],
+    link: "http://www.mangatown.com/manga/kaguya_sama_wa_kokurasetai_tensai_tachi_no_renai_zunousen/",
+    pages: ['pages/kaguya0.jpg','pages/kaguya1.jpg','pages/kaguya2.jpg', 'pages/kaguya3.jpg', 'pages/kaguya4.jpg', 'pages/kaguya5.jpg', 'pages/kaguya6.jpg', 'pages/kaguya7.jpg', 'pages/kaguya8.jpg','pages/kaguya9.jpg', 'pages/kaguya10.jpg', 'pages/kaguya11.jpg', 'pages/kaguya12.jpg', 'pages/kaguya13.jpg', 'pages/kaguya14.jpg', 'pages/kaguya15.jpg', 'pages/kaguya16.jpg', 'pages/kaguya17.jpg', 'pages/kaguya18.jpg', 'pages/kaguya19.jpg', 'pages/kaguya20.jpg'],
+    mangahere_rating: 4.91,
+    mangahere_numRatings: 169,
+    reviews: [{
+      rating: 3,
+      text: "Heard this was like Death Note for the romance genre, so was hoping it would be darker. It's more like 'Last Game', except *both* characters are egotistical and a bit ridiculous. Amusing though!"
+    }]
+  },
+  {
+    id: 25,
+    name: 'Watamote',
+    alternative_name: ["No Matter How I Look at It, It's You Guys' Fault I'm Not Popular!","Watashi ga Motenai no wa Dou Kangaete mo Omaera ga Warui!"],
+    description: "As a middle schooler, Tomoko Kuroki dreamed of making her high school debut as the most popular girl in school. But all of her experience playing video game dating simulations may have backfired. Instead of preparing her for the real world, her gaming has kept her from it for so long that even the most mundane human interactions have become a stumbling block! How can she impress her classmates when she can't even speak to them?!",
+    tags: ["comedy","cringe comedy", "school life","shounen", "slice of life"],
+    link: "http://mangalife.us/manga/Its-Not-My-Fault-That-Im-Not-Popular",
+    pages: ['pages/watamote0.jpg','pages/watamote1.jpg','pages/watamote2.jpg', 'pages/watamote3.jpg', 'pages/watamote4.jpg', 'pages/watamote5.jpg', 'pages/watamote6.jpg', 'pages/watamote7.jpg', 'pages/watamote8.jpg','pages/watamote9.jpg', 'pages/watamote10.jpg', 'pages/watamote11.jpg', 'pages/watamote12.jpg', 'pages/watamote13.jpg', 'pages/watamote14.jpg', 'pages/watamote15.jpg', 'pages/watamote16.jpg', 'pages/watamote17.jpg'],
+    mangahere_rating: 4.82,
+    mangahere_numRatings: 1686,
+    reviews: [{
+      rating: 5,
+      text: "I love this. It centers around a girl who's hilariously delusional. She has no friends, has crazy lewd fantasies, and gets obsessed, I mean really obsessed, over fictional characters. It might sound weird, but you'll probably find something in common and end up loving her by the end of it."
+    }]
   }
 ];
